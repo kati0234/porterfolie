@@ -141,9 +141,9 @@ h2 {
   height: 200px;
 }
 @media (min-width: 850px) {
-  main {
+  /* main {
     margin: 0px 30px;
-  }
+  } */
   /* styling på billeder */
   .billed_c img {
     width: 550px;
