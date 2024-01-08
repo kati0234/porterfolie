@@ -160,14 +160,6 @@ h1 {
   letter-spacing: 0.4rem;
   margin: 0%;
   padding-bottom: 20px;
-  /* color: var(--farve-1, #db3326);
-  font-size: 4rem;
-  line-height: 1.7rem;
-  letter-spacing: 0.25rem;
-  font-family: "b_bold", Arial, Helvetica, sans-serif;
-  color: var(--farve1);
-  margin: 0%;
-  padding-bottom: 15px; */
 }
 h2 {
   font-family: "a_heavy", Arial, Helvetica, sans-serif;
@@ -216,20 +208,12 @@ strong {
   main {
     flex: 1; /* Fylder tilgængelig plads */
     margin: 0 auto;
-    /* padding-bottom: 100px; */
-    /* max-width: 1300px; */
   }
   .ommig h2 {
     text-align: left;
     padding: 0px 20px;
   }
-  /* forside styl */
-  /* ul {
-    list-style: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 64px;
-  } */
+
   .kryds_box {
     width: 30px;
   }
@@ -244,41 +228,6 @@ strong {
     aspect-ratio: 1/1;
     rotate: 45deg;
   }
-
-  /* .screen a {
-    color: var(--farve1);
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 0.125rem;
-  } */
-  /* .screen p {
-    font-family: "a_light", Arial, Helvetica, sans-serif;
-    color: var(--farve1);
-    font-size: 2rem;
-  } */
-  /* h1 {
-    font-family: "b_bold", Arial, Helvetica, sans-serif;
-    color: var(--farve1);
-    font-size: 7rem;
-    letter-spacing: 0.4rem;
-    margin: 0%;
-    padding-bottom: 20px;
-  } */
-  /* h4 {
-    color: var(--farve-1, #db3326);
-    font-family: "b_book", Arial, Helvetica, sans-serif;
-    font-size: 2.25rem;
-    letter-spacing: 1.8px;
-    margin: 20px 0px 20px 0px;
-  } */
-  /* .brødtext {
-    color: #000;
-    font-family: "b_book", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.075rem;
-    line-height: 150%;
-  } */
 }
 /* tema side styling */
 
@@ -444,6 +393,9 @@ img {
 .flex_4 p {
   color: #000;
 }
-.skills {
+.ommig h3 {
+  padding: 0%;
+}
+.ommig {
   padding: 0% 8%;
 }
