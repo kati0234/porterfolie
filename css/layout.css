@@ -16,6 +16,7 @@ header {
   background-color: var(--baggrund);
   flex-shrink: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .hedder_flex {
@@ -296,4 +297,8 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 1.875rem;
+}
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

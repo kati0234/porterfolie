@@ -8,37 +8,6 @@
 }
 /* fonte web*/
 
-@font-face {
-  font-family: "accordian_text", Arial, Helvetica, sans-serif;
-  src: url(../fonte/MierB-Book.woff2);
-  color: black;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.075rem;
-}
-@font-face {
-  font-family: "accordian_overskrift", Arial, Helvetica, sans-serif;
-  src: url(../fonte/MierB-Book.woff2);
-  color: var(--farve1);
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.1125rem;
-}
-
-@font-face {
-  font-family: "accordian_tal", Arial, Helvetica, sans-serif;
-  src: url(../fonte/MierB-Book.woff2);
-  color: var(--farve1);
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.15rem;
-}
 /*  side text*/
 @font-face {
   font-family: "a_bold", Arial, Helvetica, sans-serif;
@@ -48,21 +17,6 @@
   font-family: "a_heavy", Arial, Helvetica, sans-serif;
   src: url(../fonte/MierA-Heavy.woff2);
 }
-
-@font-face {
-  font-family: "b_book", Arial, Helvetica, sans-serif;
-  src: url(../fonte/MierB-Book.woff2);
-  color: var(--farve1);
-  text-align: center;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem; /* 75% */
-  letter-spacing: 0.2rem;
-  text-decoration-line: underline;
-}
-/* om mig skrift */
-
 /* hedder skrift */
 @font-face {
   font-family: "a_book";
@@ -77,7 +31,10 @@
   font-family: "a_light";
   src: url(../fonte/MierA-Light.woff2);
 }
-/* fonte mobil */
+@font-face {
+  font-family: "normal";
+  src: url(../fonte/MierA-Regular.woff2);
+}
 
 /* primære styling */
 
@@ -145,11 +102,11 @@ ul {
   color: var(--farve1);
   font-size: 2.5rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 2.875rem;
   letter-spacing: 0.125rem;
 }
 .screen p {
-  font-family: "a_light", Arial, Helvetica, sans-serif;
+  font-family: "normal", Arial, Helvetica, sans-serif;
   color: var(--farve1);
   font-size: 1rem;
 }
@@ -189,14 +146,14 @@ h4 {
 
 .brødtext {
   color: #000;
-  font-family: "a_book", Arial, Helvetica, sans-serif;
+  font-family: "normal", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.075rem;
   line-height: 150%;
 }
-strong {
-  font-size: larger;
-}
+/* strong {
+  font-weight: bold;
+} */
 .brødtext ul {
   list-style: circle;
   display: inline;
@@ -227,6 +184,10 @@ strong {
     background-size: cover;
     aspect-ratio: 1/1;
     rotate: 45deg;
+  }
+  .ommig h2 {
+    font-family: "b_bold", Arial, Helvetica, sans-serif;
+    line-height: 0px;
   }
 }
 /* tema side styling */
@@ -372,15 +333,12 @@ img {
     width: 100%;
   }
 }
-/* om mig style */
 
-.ommig p {
+.skills p {
   font-family: "a_light", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 350;
-  line-height: 1.8125rem;
+  font-size: 1.5rem;
+  line-height: 0%;
 }
 .streg {
   width: 3.75rem;
@@ -393,9 +351,36 @@ img {
 .flex_4 p {
   color: #000;
 }
+
 .ommig h3 {
   padding: 0%;
+  z-index: 10;
 }
 .ommig {
-  padding: 0% 8%;
+  padding: 0% 8% 10% 8%;
+  position: relative;
+}
+.ommig img {
+  position: absolute;
+  bottom: 0%;
+  left: 12%;
+  width: 32.5rem;
+  height: 43.3125rem;
+  z-index: -1;
+}
+.top_ommig {
+  padding: 5% 2% 10% 2%;
+}
+.først {
+  color: var(--farve1);
+  font-family: "a_book", Arial, Helvetica, sans-serif;
+  font-size: 2.9rem;
+  line-height: 3.9375rem;
+}
+.anden {
+  color: var(--farve2);
+  line-height: 3.9375rem;
+  font-family: "b_light", Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 2rem;
 }
