@@ -273,6 +273,11 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 8%;
   }
+  .proces_c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .flex_1 {
