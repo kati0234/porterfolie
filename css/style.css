@@ -133,6 +133,7 @@ h3 {
   font-size: 3rem;
   line-height: 1.5rem;
   letter-spacing: 0.15rem;
+  padding: 10px 30px 20px;
 }
 /* text styling mellem acordian*/
 h4 {
@@ -157,46 +158,6 @@ h4 {
 .brødtext ul {
   list-style: circle;
   display: inline;
-}
-@media (min-width: 850px) {
-  html {
-    font-size: 16px;
-  }
-  main {
-    flex: 1; /* Fylder tilgængelig plads */
-    margin: 0 auto;
-  }
-  .ommig h2 {
-    text-align: left;
-    padding: 0px 20px;
-  }
-
-  .kryds_box {
-    width: 30px;
-  }
-  .kryds {
-    background-image: url(../billeder/iconer/kryds.svg);
-    background-size: cover;
-    aspect-ratio: 1/1;
-  }
-  .kryds_rotate {
-    background-image: url(../billeder/iconer/kryds.svg);
-    background-size: cover;
-    aspect-ratio: 1/1;
-    rotate: 45deg;
-  }
-  .ommig h2 {
-    font-family: "b_bold", Arial, Helvetica, sans-serif;
-    line-height: 0px;
-  }
-}
-/* tema side styling */
-
-.indhold_top p {
-  font-family: "a_light", Arial, Helvetica, sans-serif;
-  color: var(--farve1);
-  font-size: 1.5rem;
-  line-height: 150%; /* 90.625% */
 }
 
 .indhold_top a {
@@ -327,6 +288,13 @@ img {
 .modal-content {
   width: 100%;
 }
+.indhold_top p {
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1.5rem;
+  line-height: 150%; /* 90.625% */
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
@@ -351,7 +319,14 @@ img {
 .flex_4 p {
   color: #000;
 }
-
+.ommig h2 {
+  font-family: "b_bold", Arial, Helvetica, sans-serif;
+  line-height: 0px;
+  font-size: 7rem;
+  text-align: left;
+  letter-spacing: 0;
+  padding: 0px;
+}
 .ommig h3 {
   padding: 0%;
   z-index: 10;
@@ -369,7 +344,7 @@ img {
   z-index: -1;
 }
 .top_ommig {
-  padding: 5% 2% 10% 2%;
+  padding: 5% 2% 40% 2%;
 }
 .først {
   color: var(--farve1);
@@ -379,8 +354,49 @@ img {
 }
 .anden {
   color: var(--farve2);
-  line-height: 3.9375rem;
-  font-family: "b_light", Arial, Helvetica, sans-serif;
+  line-height: 3rem;
+  font-family: "a_light", Arial, Helvetica, sans-serif;
   text-align: right;
   font-size: 2rem;
 }
+
+@media (min-width: 850px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    flex: 1; /* Fylder tilgængelig plads */
+    margin: 0 auto;
+  }
+  .ommig h2 {
+    text-align: left;
+    padding: 0px 20px;
+  }
+
+  .kryds_box {
+    width: 30px;
+  }
+  .kryds {
+    background-image: url(../billeder/iconer/kryds.svg);
+    background-size: cover;
+    aspect-ratio: 1/1;
+  }
+  .kryds_rotate {
+    background-image: url(../billeder/iconer/kryds.svg);
+    background-size: cover;
+    aspect-ratio: 1/1;
+    rotate: 45deg;
+  }
+  .ommig h2 {
+    font-family: "b_bold", Arial, Helvetica, sans-serif;
+    line-height: 0px;
+    font-family: "a_heavy", Arial, Helvetica, sans-serif;
+    color: var(--farve1);
+    font-size: 10rem;
+    letter-spacing: 0.4rem;
+  }
+  .top_ommig {
+    padding: 5% 2% 20% 2%;
+  }
+}
+/* tema side styling */

@@ -66,19 +66,11 @@ h2 {
   align-items: center;
   gap: 30px;
 }
-/* .indhold_i {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
 
-  gap: 100px;
-} */
 .accordion_header {
   display: flex;
   align-items: baseline;
   gap: 32px;
-  /* padding-left: 60px; */
-  /* align-self: stretch; */
 }
 
 .accordion_header_flex {
@@ -118,10 +110,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   /* gap: 42px; */
-  flex: 1;
-  flex-shrink: 0;
+  /* flex: 1;
+  flex-shrink: 0; */
 }
-
+.indhold_i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* andet */
 .linje {
   width: 100%;
@@ -252,6 +248,7 @@ h2 {
     align-items: center;
     gap: 40px;
     flex: 1 0 0;
+    flex-direction: row;
   }
   .accordion_body_indhold {
     padding: 0px;
@@ -270,6 +267,11 @@ h2 {
   }
   h3 {
     padding: 100px 0px 100px 100px;
+  }
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
   }
 }
 
@@ -297,8 +299,4 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 1.875rem;
-}
-.grid_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
