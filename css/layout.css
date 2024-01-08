@@ -276,11 +276,6 @@ h2 {
   h3 {
     padding: 100px 0px 100px 100px;
   }
-  .flex_3 {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-  }
 }
 /* over layout af bunden med prosses */
 /* .tema_bund {
@@ -297,4 +292,19 @@ h2 {
 .tema_bund {
   display: flex;
   justify-content: end;
+}
+.flex_4 {
+  display: flex;
+  /* width: 41.3125rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_4 p {
+  flex: 1 0 0;
+}
+.flex_5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
 }

@@ -433,6 +433,12 @@ img {
 }
 .streg {
   width: 3.75rem;
-  height: 0.1rem;
+  height: 0.3rem;
   background-color: var(--farve1);
+}
+.lys {
+  background-color: rgb(255 143 120 / 52%);
+}
+.flex_4 p {
+  color: #000;
 }
