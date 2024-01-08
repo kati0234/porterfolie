@@ -1,0 +1,419 @@
+/* farver */
+
+:root {
+  --baggrund: #f7f6f2;
+  --farve1: #db3326;
+  --farve2: #ff8f78;
+  --farve3: rgba(143, 29, 20, 1);
+}
+/* fonte web*/
+
+@font-face {
+  font-family: "accordian_text", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierB-Book.woff2);
+  color: black;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.075rem;
+}
+@font-face {
+  font-family: "accordian_overskrift", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierB-Book.woff2);
+  color: var(--farve1);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1125rem;
+}
+
+@font-face {
+  font-family: "accordian_tal", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierB-Book.woff2);
+  color: var(--farve1);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+/*  side text*/
+@font-face {
+  font-family: "a_bold", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierA-Bold.woff2);
+}
+@font-face {
+  font-family: "a_heavy", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierA-Heavy.woff2);
+}
+
+@font-face {
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierB-Book.woff2);
+  color: var(--farve1);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 75% */
+  letter-spacing: 0.2rem;
+  text-decoration-line: underline;
+}
+/* om mig skrift */
+
+/* hedder skrift */
+@font-face {
+  font-family: "a_book";
+  src: url(../fonte/MierA-Book.woff2);
+}
+/* forside skrift */
+@font-face {
+  font-family: "b_bold", Arial, Helvetica, sans-serif;
+  src: url(../fonte/MierB-Bold.woff2);
+}
+@font-face {
+  font-family: "a_light";
+  src: url(../fonte/MierA-Light.woff2);
+}
+/* fonte mobil */
+
+/* primære styling */
+
+html {
+  font-size: 10px;
+}
+body {
+  background-color: var(--baggrund);
+}
+
+header {
+  background-color: var(--baggrund);
+  color: var(--farve-1, #db3326);
+  padding: 10px 0;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  flex: 1; /* Fylder tilgængelig plads */
+  margin: 0 auto;
+  align-content: center;
+}
+
+footer {
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  color: var(--farve-1, #db3326);
+  margin: 10px;
+  text-align: left;
+  padding: 10px 0;
+  background-color: var(--baggrund);
+}
+
+/* nav styl */
+#hjem a {
+  color: var(--farve-1, #db3326);
+  font-family: "a_book", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+ul a {
+  font-family: "a_book", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--farve-1, #db3326);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* forside styl */
+ul {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.screen a {
+  color: var(--farve1);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+.screen p {
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1rem;
+}
+h1 {
+  font-family: "b_bold", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 7rem;
+  letter-spacing: 0.4rem;
+  margin: 0%;
+  padding-bottom: 20px;
+  /* color: var(--farve-1, #db3326);
+  font-size: 4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.25rem;
+  font-family: "b_bold", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  margin: 0%;
+  padding-bottom: 15px; */
+}
+h2 {
+  font-family: "a_heavy", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 10rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.4rem;
+  padding-left: 10%;
+}
+
+h3 {
+  font-family: "a_bold", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+/* text styling mellem acordian*/
+h4 {
+  color: var(--farve-1, #db3326);
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  margin: 20px 0px 20px 0px;
+}
+
+.brødtext {
+  color: #000;
+  font-family: "a_book", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.075rem;
+  line-height: 150%;
+}
+strong {
+  font-size: larger;
+}
+.brødtext ul {
+  list-style: circle;
+  display: inline;
+}
+@media (min-width: 850px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    flex: 1; /* Fylder tilgængelig plads */
+    margin: 0 auto;
+    padding-bottom: 100px;
+    /* max-width: 1300px; */
+  }
+  /* forside styl */
+  /* ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 64px;
+  } */
+  .kryds_box {
+    width: 30px;
+  }
+  .kryds {
+    background-image: url(../billeder/iconer/kryds.svg);
+    background-size: cover;
+    aspect-ratio: 1/1;
+  }
+  .kryds_rotate {
+    background-image: url(../billeder/iconer/kryds.svg);
+    background-size: cover;
+    aspect-ratio: 1/1;
+    rotate: 45deg;
+  }
+
+  /* .screen a {
+    color: var(--farve1);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.125rem;
+  } */
+  /* .screen p {
+    font-family: "a_light", Arial, Helvetica, sans-serif;
+    color: var(--farve1);
+    font-size: 2rem;
+  } */
+  /* h1 {
+    font-family: "b_bold", Arial, Helvetica, sans-serif;
+    color: var(--farve1);
+    font-size: 7rem;
+    letter-spacing: 0.4rem;
+    margin: 0%;
+    padding-bottom: 20px;
+  } */
+  /* h4 {
+    color: var(--farve-1, #db3326);
+    font-family: "b_book", Arial, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    letter-spacing: 1.8px;
+    margin: 20px 0px 20px 0px;
+  } */
+  /* .brødtext {
+    color: #000;
+    font-family: "b_book", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.075rem;
+    line-height: 150%;
+  } */
+}
+/* tema side styling */
+
+.indhold_top p {
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1.5rem;
+  line-height: 150%; /* 90.625% */
+}
+
+.indhold_top a {
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-decoration-line: underline;
+}
+/* links styling */
+
+a:link {
+  color: var(--farve1);
+}
+
+a:visited {
+  color: var(--farve1);
+}
+
+a:hover {
+  color: var(--farve2);
+}
+
+a:active {
+  color: var(--farve1);
+}
+/* link til krynds billed  */
+.kryds_box {
+  width: 2rem;
+}
+.kryds {
+  background-image: url(../billeder/iconer/kryds.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
+.kryds_rotate {
+  background-image: url(../billeder/iconer/kryds.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  rotate: 45deg;
+}
+
+img {
+  object-fit: contain;
+}
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(255, 143, 120, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* texten når billedet er åben */
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #000000;
+  padding: 10px 0;
+  height: 150px;
+  font-family: "b_light", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* tilføjer animation */
+.modal-content,
+.caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* luk knap på modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--farve1);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--farve-1, #db3326);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}

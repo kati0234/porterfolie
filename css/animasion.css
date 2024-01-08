@@ -1,0 +1,15 @@
+/* aktiv classe som siger at når den er activ så skal body være ude */
+/* fjeren display non på accordion_body */
+.accordion.active .accordion_body {
+  display: block;
+}
+
+/* Når accordion har klassen "active" */
+.accordion.active .kryds_box .kryds {
+  transform: rotate(45deg);
+}
+
+/* Når accordion ikke har klassen "active" */
+.accordion .kryds_box .kryds {
+  transform: rotate(0deg);
+}
