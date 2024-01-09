@@ -274,11 +274,11 @@ img {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #000000;
+  color: var(--baggrund);
   padding: 10px 0;
   height: 150px;
-  font-family: "b_light", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 /* tilføjer animation */
@@ -302,7 +302,7 @@ img {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: var(--farve1);
+  color: var(--baggrund);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
