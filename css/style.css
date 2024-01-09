@@ -310,7 +310,6 @@ img {
 .close:focus {
   color: var(--farve-1, #db3326);
   text-decoration: none;
-  /* cursor: url("../billeder/iconer/mus3.svg"), auto; */
 }
 .modal-content {
   width: 100%;
