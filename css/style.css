@@ -318,6 +318,10 @@ img {
 .proces_c p {
   text-align: center;
 }
+.proces_c ul {
+  text-align: center;
+}
+
 .proces_c .brødtext {
   padding: 0px 100px;
 }
