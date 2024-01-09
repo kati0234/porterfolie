@@ -109,9 +109,7 @@ h2 {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 42px; */
-  /* flex: 1;
-  flex-shrink: 0; */
+  padding: 10px 0px 60px 10px;
 }
 .indhold_i {
   display: flex;
@@ -137,11 +135,43 @@ h2 {
   width: 400px;
   height: 200px;
 }
+.flex_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.tema_bund {
+  display: flex;
+  justify-content: end;
+}
+.flex_4 {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_4 p {
+  flex: 1 0 0;
+}
+.flex_5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+.flex_6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.flex_6 p {
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1.5rem;
+}
 @media (min-width: 850px) {
-  /* main {
-    margin: 0px 30px;
-  } */
-  /* styling på billeder */
   .billed_c img {
     width: 550px;
     height: 350px;
@@ -278,30 +308,4 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-}
-
-.flex_1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-.tema_bund {
-  display: flex;
-  justify-content: end;
-}
-.flex_4 {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-}
-.flex_4 p {
-  flex: 1 0 0;
-}
-.flex_5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.875rem;
 }

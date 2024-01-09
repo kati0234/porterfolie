@@ -151,6 +151,7 @@ h4 {
   font-size: 1.2rem;
   letter-spacing: 0.075rem;
   line-height: 150%;
+  padding-right: 30px;
 }
 /* strong {
   font-weight: bold;
@@ -289,16 +290,31 @@ img {
   width: 100%;
 }
 .indhold_top p {
-  font-family: "a_light", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  font-size: 1.5rem;
-  line-height: 150%; /* 90.625% */
+  line-height: 3rem;
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 .proces {
-  background-color: var(--farve1);
-  width: 10.75rem;
-  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.7rem 0.7rem;
+  justify-content: center;
+
   border-radius: 2rem;
+  border: 3px solid var(--farve1, #db3326);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--farve1);
+}
+.proces p {
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1.2rem;
 }
 
 /* 100% Image Width on Smaller Screens */
