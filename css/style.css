@@ -1,20 +1,19 @@
-/* farver */
-
 :root {
   --baggrund: #f7f6f2;
   --farve1: #db3326;
   --farve2: #ff8f78;
   --farve3: rgba(143, 29, 20, 1);
 }
+/* farver */
 /* fonte web*/
 
 /*  side text*/
 @font-face {
-  font-family: "a_bold", Arial, Helvetica, sans-serif;
+  font-family: "a_bold";
   src: url(../fonte/MierA-Bold.woff2);
 }
 @font-face {
-  font-family: "a_heavy", Arial, Helvetica, sans-serif;
+  font-family: "a_heavy";
   src: url(../fonte/MierA-Heavy.woff2);
 }
 /* hedder skrift */
@@ -24,7 +23,7 @@
 }
 /* forside skrift */
 @font-face {
-  font-family: "b_bold", Arial, Helvetica, sans-serif;
+  font-family: "b_bold";
   src: url(../fonte/MierB-Bold.woff2);
 }
 @font-face {
@@ -202,7 +201,7 @@ a:active {
   background-image: url(../billeder/iconer/kryds.svg);
   background-size: cover;
   aspect-ratio: 1/1;
-  rotate: 45deg;
+  transform: rotate(45deg);
 }
 
 /* kontainer der åbner */
@@ -220,7 +219,7 @@ img {
   /* background-color: #db3326; */
   /* opacity: 0.7; */
   transition: 0.3s;
-  scale: 110%;
+  zoom: 110%;
 }
 
 /* modul bagrund */
@@ -386,7 +385,7 @@ img {
   font-size: 2rem;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   html {
     font-size: 16px;
   }
@@ -411,7 +410,7 @@ img {
     background-image: url(../billeder/iconer/kryds.svg);
     background-size: cover;
     aspect-ratio: 1/1;
-    rotate: 45deg;
+    transform: rotate(45deg);
   }
   .ommig h2 {
     font-family: "b_bold", Arial, Helvetica, sans-serif;

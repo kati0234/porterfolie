@@ -53,10 +53,12 @@ nav ul {
 } */
 .screen {
   position: relative;
-  width: 100%;
+  max-width: 1400px;
   aspect-ratio: 16/9;
-  /* padding: 0cqw 5cqw; */
+
+  /* Gør denne boks til den container som cqw værdien refererer til */
   container-type: inline-size;
+  container-type: inline;
 }
 #pos2 {
   position: absolute;
@@ -90,8 +92,7 @@ h2 {
 
 /* acording stylling */
 .accordion {
-  display: inline-flex;
-  /* width: 624px; */
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -136,10 +137,10 @@ h2 {
 }
 
 .accordion_box {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0px 60px 10px;
+  padding: 10px 0px 100px 10px;
 }
 .indhold_i {
   display: flex;
@@ -197,7 +198,7 @@ h2 {
   gap: 20px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   /* størlse og psoition på links forside */
   .screen ul {
     display: flex;
@@ -250,7 +251,9 @@ h2 {
 
     padding: 0px 20px;
   }
-
+  .accordion_header {
+    padding: 0px 0px 0px 100px;
+  }
   /* nav ul {
     display: flex;
     justify-content: center;
@@ -291,13 +294,14 @@ h2 {
   }
   /* acording stylling */
   .accordion {
-    display: flex;
+    /* display: flex;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 75px;
-    flex-shrink: 0;
+    flex-shrink: 0; */
+    gap: 75px;
     padding: 0px 20px;
   }
   /* .accordion_header {
@@ -339,9 +343,9 @@ h2 {
   }
   /* accordion box */
   .accordion_box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     gap: 60px;
   }
 
