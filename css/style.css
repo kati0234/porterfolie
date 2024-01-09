@@ -315,6 +315,12 @@ img {
 .modal-content {
   width: 100%;
 }
+.proces_c p {
+  text-align: center;
+}
+.proces_c .brødtext {
+  padding: 0px 100px;
+}
 /* procs styling */
 .proces {
   display: flex;
@@ -437,5 +443,8 @@ img {
   }
   .top_ommig {
     padding: 5% 2% 20% 2%;
+  }
+  .proces_c .brødtext {
+    padding: 0px 200px;
   }
 }
