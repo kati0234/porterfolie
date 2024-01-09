@@ -36,15 +36,45 @@ nav ul {
   list-style: none;
 }
 /* forside layout */
+/* .screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/10;
+ 
+  container-type: inline-size;
+} */
+.screen a {
+  font-size: 4cqw;
+}
+/* må slettes hvis jeg ik kan få det til at virka  */
+/* .screen ul {
+  display: flex;
+  flex-direction: column;
+} */
+.screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  /* padding: 0cqw 5cqw; */
+  container-type: inline-size;
+}
 #pos2 {
   position: absolute;
-  top: 50%;
-  left: 25%;
+  bottom: 6cqw;
+  right: 3cqw;
+  /* font-size: 3cqw; */
 }
+/* .screen li {
+  font-size: 3cqw;
+} */
 #pos {
   position: absolute;
-  top: 30%;
-  left: 8%;
+  top: 10cqw;
+  left: 5cqw;
+  font-size: 7cqw;
+}
+.screen p {
+  font-size: 2cqw;
 }
 /* tema side top layout */
 .text_tema_side {
@@ -166,12 +196,36 @@ h2 {
   align-items: center;
   gap: 20px;
 }
-.flex_6 p {
-  font-family: "b_book", Arial, Helvetica, sans-serif;
-  color: var(--farve1);
-  font-size: 1.5rem;
-}
+
 @media (min-width: 850px) {
+  /* størlse og psoition på links forside */
+  .screen ul {
+    display: flex;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+  }
+  /* nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+  } */
+  /* .screen {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    
+    container-type: inline-size;
+  } */
+  #pos2 {
+    position: absolute;
+    top: 30cqw;
+    right: 5cqw;
+    font-size: 6cqw;
+  }
   .billed_c img {
     width: 550px;
     height: 350px;
@@ -197,15 +251,15 @@ h2 {
     padding: 0px 20px;
   }
 
-  nav ul {
+  /* nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     list-style: none;
-  }
+  } */
   /* forside layout */
-  #pos2 {
+  /* #pos2 {
     position: absolute;
     top: 65%;
     left: 40%;
@@ -214,7 +268,7 @@ h2 {
     position: absolute;
     top: 30%;
     left: 8%;
-  }
+  } */
   /* layout top af tema sider */
   .indhold_top {
     padding: 40px 40px 100px 40px;

@@ -108,15 +108,16 @@ ul {
 .screen p {
   font-family: "normal", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  font-size: 1rem;
+  /* font-size: 2rem; */
 }
+/* h text */
 h1 {
   font-family: "b_bold", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  font-size: 7rem;
+  /* font-size: 7rem; */
   letter-spacing: 0.4rem;
   margin: 0%;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 h2 {
   font-family: "a_heavy", Arial, Helvetica, sans-serif;
@@ -126,7 +127,6 @@ h2 {
   letter-spacing: 0.4rem;
   padding-left: 10%;
 }
-
 h3 {
   font-family: "a_bold", Arial, Helvetica, sans-serif;
   color: var(--farve1);
@@ -153,14 +153,17 @@ h4 {
   line-height: 150%;
   padding-right: 30px;
 }
-/* strong {
-  font-weight: bold;
-} */
+
 .brødtext ul {
   list-style: circle;
   display: inline;
 }
-
+.indhold_top p {
+  color: var(--farve1);
+  line-height: 3rem;
+  font-family: "a_light", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
 .indhold_top a {
   font-family: "b_book", Arial, Helvetica, sans-serif;
   color: var(--farve1);
@@ -202,6 +205,7 @@ a:active {
   rotate: 45deg;
 }
 
+/* kontainer der åbner */
 img {
   object-fit: contain;
 }
@@ -213,22 +217,25 @@ img {
 }
 
 .myImg:hover {
-  opacity: 0.7;
+  /* background-color: #db3326; */
+  /* opacity: 0.7; */
+  transition: 0.3s;
+  scale: 110%;
 }
 
-/* The Modal (background) */
+/* modul bagrund */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; /* skjuler som dfalt */
+  position: fixed; /* bliver på plads  */
+  z-index: 2000; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* fjeren scroll hvis der er nødvendig  */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(255, 143, 120, 0.8); /* Black w/ opacity */
+  background-color: rgba(255, 143, 120, 0.8); /* farve to w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -289,12 +296,7 @@ img {
 .modal-content {
   width: 100%;
 }
-.indhold_top p {
-  color: var(--farve1);
-  line-height: 3rem;
-  font-family: "a_light", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-}
+/* procs styling */
 .proces {
   display: flex;
   align-items: center;
@@ -319,12 +321,12 @@ img {
 .proces_c .brødtext {
   padding: 20px 40px;
 }
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
+.flex_6 p {
+  font-family: "b_book", Arial, Helvetica, sans-serif;
+  color: var(--farve1);
+  font-size: 1.5rem;
 }
+/* om mig styling */
 
 .skills p {
   font-family: "a_light", Arial, Helvetica, sans-serif;
@@ -423,4 +425,3 @@ img {
     padding: 5% 2% 20% 2%;
   }
 }
-/* tema side styling */
