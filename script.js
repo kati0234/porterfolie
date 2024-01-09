@@ -9,14 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalclose = modal.querySelector(".close");
   // tilføjer lydt til krys i modal
   modalclose.addEventListener("click", function (e) {
+    //stopper den standert ting i at ske
     e.preventDefault();
+    //stopper udsprednigne
     e.stopPropagation();
     modal.style.display = "none";
   });
   // Funktion for at åbne modal og vise det klikkede billede
   function openImage(img) {
+    //gør det synligt
     modal.style.display = "block";
+    //viser billedet
     modalImg.src = img.src;
+    //viser capchion text
     captionText.innerHTML = img.alt;
   }
 
@@ -24,8 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".myImg");
   images.forEach((img) => {
     img.addEventListener("click", function (e) {
-      //stopper den normale klik på den normale klik
+      //stopper den standert ting i at ske
       e.preventDefault();
+      //stopper udsprednigne af eventet
       e.stopPropagation();
       openImage(img);
       console.log("img");

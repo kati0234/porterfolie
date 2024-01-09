@@ -1,13 +1,13 @@
+/* farver */
 :root {
   --baggrund: #f7f6f2;
   --farve1: #db3326;
   --farve2: #ff8f78;
   --farve3: rgba(143, 29, 20, 1);
 }
-/* farver */
-/* fonte web*/
 
-/*  side text*/
+/* fonte */
+
 @font-face {
   font-family: "a_bold";
   src: url(../fonte/MierA-Bold.woff2);
@@ -113,7 +113,7 @@ ul {
   color: var(--farve1);
   font-size: 2rem;
 }
-/* h text */
+/* text styling*/
 h1 {
   font-family: "b_bold", Arial, Helvetica, sans-serif;
   color: var(--farve1);
@@ -138,7 +138,7 @@ h3 {
   letter-spacing: 0.15rem;
   padding: 10px 30px 20px;
 }
-/* text styling mellem acordian*/
+
 h4 {
   color: var(--farve-1, #db3326);
   font-family: "b_book", Arial, Helvetica, sans-serif;
@@ -343,7 +343,6 @@ img {
   font-size: 1.5rem;
 }
 /* om mig styling */
-
 .skills p {
   font-family: "a_light", Arial, Helvetica, sans-serif;
   color: var(--farve1);
