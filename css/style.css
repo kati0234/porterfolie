@@ -205,6 +205,9 @@ a:hover {
 a:active {
   color: var(--farve1);
 }
+a {
+  cursor: url("../billeder/iconer/mus3.svg"), auto;
+}
 /* link til krynds billed  */
 .kryds_box {
   width: 2rem;

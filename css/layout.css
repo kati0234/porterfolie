@@ -6,8 +6,12 @@ body {
 .app {
   min-height: 100%;
 }
-a {
-  cursor: url("../billeder/iconer/mus3.svg"), auto;
+/* bruger pesudo element til at text oversteg  */
+::selection {
+  background-color: var(
+    --farve1
+  ); /* Ændrer baggrundsfarven på den markerede tekst */
+  color: var(--baggrund); /* Ændrer tekstfarven på den markerede tekst */
 }
 /* hedder layout */
 header {
