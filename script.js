@@ -1,5 +1,8 @@
+// Vent på, at DOM'en er fuldt indlæst, før vi kører koden
 document.addEventListener("DOMContentLoaded", function () {
+  // Hent alle elementer med klassen "accordion"
   const accordions = document.querySelectorAll(".accordion");
+  // Hent referencer til modal-elementerne
   const modal = document.querySelector(".modal");
   const modalImg = document.querySelector(".modal-content");
   const captionText = document.querySelector(".caption");
@@ -23,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     img.addEventListener("click", function (e) {
       //stopper den normale klik på den normale klik
       e.preventDefault();
-      //
       e.stopPropagation();
       openImage(img);
       console.log("img");
@@ -48,6 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
       accordion.classList.toggle("active");
     });
   });
-
-  // Klikhåndtering for kryds-box (lukning af accordion-body)
 });
