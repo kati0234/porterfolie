@@ -144,6 +144,10 @@ h2 {
 .accordion_body {
   display: none;
 }
+.tom {
+  width: 400px;
+  height: 200px;
+}
 .billed_c img {
   width: 400px;
   height: 200px;
@@ -194,7 +198,10 @@ h2 {
   .grid_1_1 > :nth-child(2) {
     grid-column: 1;
   }
-
+  /* .tom {
+    width: 550px;
+    height: 350px;
+  } */
   .billed_c img {
     width: 550px;
     height: 350px;
