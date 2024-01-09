@@ -67,6 +67,10 @@ footer {
   padding: 10px 0;
   background-color: var(--baggrund);
 }
+#footer_hjem {
+  position: absolute;
+  bottom: 0;
+}
 
 /* nav styl */
 #hjem a {
@@ -107,13 +111,13 @@ ul {
 .screen p {
   font-family: "normal", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 /* h text */
 h1 {
   font-family: "b_bold", Arial, Helvetica, sans-serif;
   color: var(--farve1);
-  /* font-size: 7rem; */
+  font-size: 7rem;
   letter-spacing: 0.4rem;
   margin: 0%;
   /* padding-bottom: 20px; */
