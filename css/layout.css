@@ -1,11 +1,14 @@
 html,
 body {
   height: 100%;
+  cursor: url("../billeder/iconer/mus2.svg"), auto;
 }
 .app {
   min-height: 100%;
 }
-
+a {
+  cursor: url("../billeder/iconer/mus3.svg"), auto;
+}
 /* hedder layout */
 header {
   max-width: 100%;
@@ -76,6 +79,7 @@ h2 {
   display: flex;
   align-items: baseline;
   gap: 32px;
+  cursor: url("../billeder/iconer/mus3.svg"), auto;
 }
 
 .accordion_header_flex {
@@ -292,6 +296,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8%;
+  }
+  /* procces */
+  .flex_6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
   }
   .proces_c {
     display: flex;

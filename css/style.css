@@ -235,6 +235,8 @@ img {
 .myImg:hover {
   /* background-color: #db3326; */
   /* opacity: 0.7; */
+  cursor: url("../billeder/iconer/mus3.svg"), auto;
+
   transition: 0.3s;
   zoom: 110%;
 }
@@ -307,7 +309,7 @@ img {
 .close:focus {
   color: var(--farve-1, #db3326);
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: url("../billeder/iconer/mus3.svg"), auto; */
 }
 .modal-content {
   width: 100%;
@@ -319,28 +321,21 @@ img {
   text-align: center;
   padding: 0.7rem 0.7rem;
   justify-content: center;
-
-  border-radius: 2rem;
-  border: 3px solid var(--farve1, #db3326);
 }
 .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--farve1);
+  background-image: url(../billeder/iconer/pil.svg);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  transform: rotate(45deg);
+  height: 20px;
 }
-.proces p {
-  font-family: "b_book", Arial, Helvetica, sans-serif;
-  color: var(--farve1);
-  font-size: 1.2rem;
-}
-.proces_c .brødtext {
-  padding: 20px 40px;
-}
+
 .flex_6 p {
-  font-family: "b_book", Arial, Helvetica, sans-serif;
+  font-family: "a_book", Arial, Helvetica, sans-serif;
   color: var(--farve1);
   font-size: 1.5rem;
+  margin: 0px;
+  /* padding: 2%; */
 }
 /* om mig styling */
 .skills p {
@@ -427,6 +422,9 @@ img {
     background-size: cover;
     aspect-ratio: 1/1;
     transform: rotate(45deg);
+  }
+  .dot {
+    transform: rotate(-45deg);
   }
   .ommig h2 {
     font-family: "b_bold", Arial, Helvetica, sans-serif;
